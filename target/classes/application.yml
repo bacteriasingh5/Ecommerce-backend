@@ -1,0 +1,45 @@
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+#server:
+#  port: 8090
+#
+#spring:
+#  config:
+#    import: optional:configserver:http://localhost:8888
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/full-stack-ecommerce
+#    username: root
+#    password: Winter!@123
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  application:
+#    name: ecomerce
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#    hibernate:
+#      ddl-auto: update # or create-drop (for development), validate, etc.
+#    show-sql: true # set to true to log SQL statements
+#
+#hazelcast:
+#  instance:
+#    hazelcast-instance-name: MyHazelcastInstance
+#    network:
+#      port:
+#        auto-increment: true
+#        port-count: 100
+#    map:
+#      your-map-name:
+#        backup-count: 1
+#        eviction:
+#          size: 10000
+#          max-size-policy: PER_NODE
+#        time-to-live-seconds: 300
+#
+# Additional Spring Boot configurations can be added here
+#security:
+#  default:
+#    username: admin
+#    password: admin
